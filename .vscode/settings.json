@@ -1,4 +1,10 @@
 {
-    "gitdoc.enabled": true,
-    "liveServer.settings.port": 5501
+    "emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": ".*",
+                "cmd": "git add -A && git commit -m \"Auto Save\" && git push"
+            }
+        ]
+    }
 }
